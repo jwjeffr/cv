@@ -9,7 +9,7 @@
 % Authors:
 % Omar Roldan
 % Based on a template by  Jan Vorisek (jan@vorisek.me)
-% Based on a template by Jan Küster (info@jankuester.com)
+% Based on a template by Jan KÃ¼ster (info@jankuester.com)
 % Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
 %
 % License:
@@ -94,7 +94,7 @@
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.73\textwidth}
-    OVITO, PyTorch, NumPy, Numba, pandas, scipy
+    OVITO, PyTorch, NumPy, jax, Numba, pandas, polars, SQLALchemy, scipy
     \end{minipage}
     \vspace{4mm}
     
@@ -103,7 +103,7 @@
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.73\textwidth}
-    LAMMPS, OVITO
+    LAMMPS, OVITO, VASP
     \end{minipage}
     \vspace{1mm}
     
@@ -249,8 +249,23 @@
 \end{entrylist}
 
 \vspace{-10 pt}
+\renewcommand\refname{}
 \cvsect{Publications}
-
+\vspace{-1.5cm}
 \bibliography{ref}
+
+\cvsect{Conferences}
+\begin{entrylist}
+    \entry
+        {2021 \\ \color{gray} \textit{Virtual}}
+        {American Chemical Society Spring Virtual National Meeting}
+        {}
+        {Oral presentation on instabilities of melanosome proteins (OCA2, SLC45A2, TYR, TPC2, and ATP7A) from point mutations and implication for disease}
+    \entry
+        {2024 \\ \color{gray} \textit{Kingston, Ontario}}
+        {The 16th conference of COmputer Simulation of IRradiation Effects in Solids}
+        {}
+        {Oral presentation on diffusivity of vacancies on a noisy potential energy surface}
+\end{entrylist}
 
 \end{document}
