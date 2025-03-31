@@ -33,38 +33,49 @@
 \begin{document}
 \nocite{*}
 
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
 \begin{minipage}[t]{0.5\textwidth} 
-	\vspace{-\baselineskip}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Jacob Jeffries}}}} % First name
 	
 	\vspace{6pt}
 	
-	{\Large Graduate Student}
+	{\Large Graduate Student} % Career or current job title
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.2\textwidth}
-	\vspace{-\baselineskip}
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
     \icon{MapMarker}{11}{Clemson, SC, USA}\\
     \icon{Github}{11}{\href{https://github.com/jwjeffr}{github.com/jwjeffr}}\\
 	
 \end{minipage}
-\begin{minipage}[t]{0.27\textwidth}
-	\vspace{-\baselineskip}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
 		
     \icon{Envelope}{11}{\href{mailto:jwjeffries2000@gmail.com}{jwjeffries2000 (at) gmail (dot) com}}\\
     \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/jjeffries12}{linkedin.com/in/jjeffries12}}\\    
     
 \end{minipage}
 
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
 \begin{minipage}[t]{0.46\textwidth}
     \cvsect{Summary}
 	\vspace{-6pt}
  
+    %Dummy text
 	Ph.D. student in materials science and engineering focused on multi-scale modeling, high-performance computing, molecular dynamics, Monte Carlo methods, and applied physics. \\
 \end{minipage}
-\hfill
+\hfill % Whitespace between
 \begin{minipage}[t]{0.465\textwidth}
     \cvsect{Skills}
     \vspace{-6pt}
@@ -98,41 +109,9 @@
     
 \end{minipage}
 
-\vspace{-10 pt}
-\cvsect{Education}
-\begin{entrylist}
-    \entry
-		{2023 - }
-		{Materials Science and Engineering (Ph.D.)}
-		{Clemson University}
-		{Computational multi-scale materials science for concentrated alloys, materials under extreme conditions, and nuclear materials. Focus on molecular dynamics and Monte Carlo methods.}
-    \entry
-		{2019 - 2022}
-		{Physics (B.S.), Magna Cum Laude}
-		{Clemson University}
-		{Minors in chemistry and mathematics, honors distinctions in physics and chemistry.}
-\end{entrylist}
-
-\vspace{-10 pt}
-\renewcommand\refname{}
-\cvsect{Publications}
-\vspace{-1.5cm}
-\bibliography{ref}
-
-\cvsect{Conferences}
-\begin{entrylist}
-    \entry
-        {April 2021 \\ \color{gray} \textit{Virtual}}
-        {American Chemical Society Spring Virtual National Meeting}
-        {}
-        {Oral presentation on instabilities of melanosome proteins (OCA2, SLC45A2, TYR, TPC2, and ATP7A) from point mutations and implication for disease}
-    \entry
-        {July 2024 \\ \color{gray} \textit{Kingston, Ontario}}
-        {The 16th conference of COmputer Simulation of IRradiation Effects in Solids}
-        {}
-        {Oral presentation on diffusivity of vacancies on a noisy potential energy surface}
-\end{entrylist}
-
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
 \cvsect{Projects}
 \begin{entrylist}
     \entry
@@ -141,19 +120,19 @@
         {}
         {Analytical statistical mechanics and Kinetic Monte Carlo simulations to quantify diffusion on a rough potential energy surface.}
     \entry
-        {LAMMPS \\ Python \\ R}
+        {LAMMPS \\ Python}
         {Chemical potential calculator}
         {\href{https://github.com/jwjeffr/chemical_potential_bulk}{github.com}}
         {LAMMPS interface to calculate and fit chemical potentials of random solid solutions.}
     \entry
 		{LAMMPS \\ Python}
 		{Impurity concentration in concentrated alloys}
-        {\href{https://github.com/jwjeffr/vacancy_concentration}{github.com}/\href{https://arxiv.org/abs/2402.07324}{arXiv}}
+        {\href{https://github.com/jwjeffr/vacancy_concentration}{github.com}/\href{https://arxiv.org/abs/2402.07324}{arXiv}/\href{https://doi.org/10.1103/PhysRevMaterials.9.033803}{PRM}}
 		{$\mu pT$ pseudo-ensemble model for impurity concentration in concentrated alloys.}
     \entry
-        {PyTorch \\ Python}
+        {SciPy \\ Python}
 		{Kinetic Monte Carlo crystal growth}
-        {\href{https://github.com/jwjeffr/torch-cgkmc}{github.com {\color{gray} (private)}}}
+        {\href{https://github.com/jwjeffr/pytorch_kmc}{github.com}/\href{https://pypi.org/project/cgkmc/}{pypi}}
 		{Density functional theory-informed Kinetic Monte Carlo simulations of crystal growth of pentaerythritol tetranitrate and $\beta$-1,3,5,7-tetranitro-1,3,5,7-tetrazoctane.}
     \entry
 		{PyTorch \\ Python}
@@ -172,10 +151,36 @@
     \entry
 		{OVITO \\ Python}
 		{Onsager coefficients calculator}
-		{\href{https://github.com/jwjeffr/onsager_coefficients/}{github.com}/\href{https://pypi.org/project/onsager-coefficients/}{pypi.org}}
+		{\href{https://github.com/jwjeffr/onsager_coefficients/}{github.com}/\href{https://pypi.org/project/cowley-sro-parameters/}{pypi.org}}
 		{Repository for calculating Onsager coefficients from a molecular dynamics run, including a general-purpose particle-reduction OVITO modifier.}
+    \entry
+		{SciPy \\ Python}
+		{Optimal color palette generator}
+		{\href{https://github.com/jwjeffr/optcolpal}{github.com}}
+		{Color palette generator that maximizes pairwise CIELAB distance between colors in the palette.}
 \end{entrylist}
 
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{2023 - }
+		{Materials Science and Engineering (Ph.D.)}
+		{Clemson University}
+		{Computational multi-scale materials science for concentrated alloys, materials under extreme conditions, and nuclear materials. Focus on molecular dynamics and Monte Carlo methods.}
+    \entry
+		{2019 - 2022}
+		{Physics (B.S.), Magna Cum Laude}
+		{Clemson University}
+		{Minors in chemistry and mathematics, honors distinctions in physics and chemistry.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
 \vspace{-10 pt}
 \cvsect{Experience}
 \begin{entrylist}
@@ -186,7 +191,7 @@
 		{\vspace{-10pt}
         \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
             \item Atomistic simulations of concentrated alloys on high performance computers.
-            \begin{itemize}
+            \begin{itemize}%[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=0pt]
                 \item Molecular dynamics simulations of point-defect hopping.
                 \item Thermodynamics of point defects using molecular statics.
                 \item Molecular dynamics-informed phase-field simulations of radiation-induced segregation.
@@ -241,6 +246,28 @@
             \item Computational bioinformatics and protein thermodynamics on high-performance computers focused on targeted medicine.
         \end{itemize}
         }
+\end{entrylist}
+
+\vspace{-10 pt}
+\renewcommand\refname{}
+\cvsect{Publications}
+\vspace{-1.5cm}
+\bibliography{ref}
+
+\cvsect{Conferences}
+\begin{entrylist}
+    \entry
+        {2021 \\ \color{gray} \textit{Virtual}}
+        {American Chemical Society Spring Virtual National Meeting}
+        {}
+        {Oral presentation on instabilities of melanosome proteins (OCA2, SLC45A2, TYR, TPC2, and ATP7A) from point mutations and implication for disease}
+    \entry
+        {2024 \\ \color{gray} \textit{Kingston, Ontario}}
+        {The 16th conference of COmputer Simulation of IRradiation Effects in Solids}
+        {}
+        {Oral presentation on diffusivity of vacancies on a noisy potential energy surface}
+    \entry
+        {2025 \\ \color{gray} \textit{Las Vegas, Nevada}} {TMS 2025 Annual Meeting \& Exhibition} {} {Oral presentation on atomistic and statistical modeling of defect properties in concentrated solid solutions}
 \end{entrylist}
 
 \end{document}
